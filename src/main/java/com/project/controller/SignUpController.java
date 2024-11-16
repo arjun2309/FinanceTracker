@@ -27,7 +27,7 @@ import com.project.service.BudgetService;
 import com.project.service.ExpenseService;
 import com.project.service.SignUpService;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://finance-tracker-s7bo.onrender.com")
 @RestController
 @RequestMapping("/project")
 public class SignUpController {
