@@ -10,7 +10,7 @@ public interface BudgetService {
 
 	public BudgetModel saveBudgets(BudgetDto budgetDto);
 	
-	public List<BudgetDto> getAllBudgets(String username);
+	public List<BudgetDto> getAllBudgets();
 
  public Optional<BudgetModel> deleteBudget(long id);
  
