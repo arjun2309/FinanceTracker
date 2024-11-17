@@ -31,7 +31,7 @@ public class BudgetServiceImpl implements BudgetService {
 	}
 	
 	@Override
-	public List<BudgetDto> getAllBudgets(){
+	public List<BudgetDto> getAllBudgets(String username){
 		List<BudgetModel> budget=budgetRepository.findAll();
 		return budget.stream().filter(budget1 -> budget1.getUsername().equals(username)).map(budget1->{
 			BudgetDto budgetDto=new BudgetDto();
