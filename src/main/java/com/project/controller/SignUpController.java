@@ -70,8 +70,8 @@ public BudgetModel SaveBudget(@RequestBody BudgetDto budgetDto) {
 }
 
 @GetMapping("/getbudgets")
-public List<BudgetDto> getAllBudget(){
-	return budgetService.getAllBudgets();
+public List<BudgetDto> getAllBudget(@RequestParam String username){
+	return budgetService.getAllBudgets(username);
 }
 
 @DeleteMapping("/deletebudgets/{id}")
